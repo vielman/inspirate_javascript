@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript inspirate</title>
+</head>
+<body>
+    <h1>Ejercicios Capitulo 3</h1>
+
+    <script>
+        //Metodos 
+
+        //agrupadores
+        console.groupCollapsed("## Bucle For ##");
+        for(var i = 5; i > 0; i-- ){
+            console.info("Iteracion numero %i", i);
+        }
+        console.groupEnd
+
+        //table
+        var lenguajes = [
+            {nombre: "JavaSript", extension: ".js"},
+            {nombre: "TypeSript", extension: ".ts"},
+            {nombre: "CoffeeSript", extension: ".coffee"},
+        ];
+
+        console.table(lenguajes);
+        console.table(lenguajes, "extension");
+
+        //time
+        console.time("Medicion de miArry");
+        var miArry = new Array(1000000);
+        for(var i = miArry.length -1; i >= 0; i-- ){
+            miArry[i] = new Object();
+        }
+        console.timeEnd("Medicion de miArray");
+
+        // matematicas basicas agrupando
+        console.log("## matematicas basicas agrupando ##");
+        var expr1 = (3 + 7) * 10;
+        var expr2 = (-56 * 6) -74 * -25;
+        var expr3 = (3 * 3) + 10 -12 / 2;
+        var expr4 = 44 + (83 % (33 +100));
+        var expr5= -145 + (500/ 10 -5) + 10 * 10;
+        console.log(expr1);
+        console.log(expr2);
+        console.log(expr3);
+        console.log(expr4);
+        console.log(expr5);
+
+        //Matematcas
+        console.log("## matematicas basicas crecimiento ##");
+        var numero = 5;
+
+        console.log(--numero);
+        console.log(numero--);
+        console.log(++numero);
+        console.log(numero++);
+
+        console.log("## operadores de asignacion ##");
+        console.log("## Asignacion  = ##");
+        var x = 1;
+        var y = 2
+        x = y;
+        console.info("\"x\" vale", x);
+
+        console.log("## Suma += ##");
+        var x = 1;
+        var y = 2
+        x += y;
+        console.info("\"x\" vale", x);
+
+        console.log("## Resta -= ##");
+        var x = 1;
+        var y = 2
+        x -= y;
+        console.info("\"x\" vale", x);
+
+        console.log("## Multipilcacion *= ##");
+        var x = 1;
+        var y = 2
+        x *= y;
+        console.info("\"x\" vale", x);
+
+        console.log("## Division /= ##");
+        var x = 1;
+        var y = 2
+        x /= y;
+        console.info("\"x\" vale", x);
+
+        console.log("## Modulo %= ##");
+        var x = 1;
+        var y = 2
+        x %= y;
+        console.info("\"x\" vale", x);
+
+        //Interaccion Basica con el usuario
+
+        //alert
+        alert("¡Bienvenido a esta Web!");
+
+        //cnofirm
+        console.log("## Window.confirm ##");
+        var respuesta =confirm("Preciona un boton!");
+        if (respuesta === true){
+            console.log("Has Aceptado!");
+        } else {
+            console.log("Has cancelado");
+        }
+
+
+       
+    </script>
+    
+</body>
+</html>
