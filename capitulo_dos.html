@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript inspirate</title>
+</head>
+<body>
+    <h1>Ejercicios Capitulo 2</h1>
+
+    <script>
+        //le mostramos el siguiente mensaje
+        var menjase = "Hola usuario! ¿Como te llaman";
+
+        //almacenamos su respuesta en una variable
+
+        var nombreUsuario = prompt(menjase);
+
+        switch(nombreUsuario){
+            case "Pepe":
+                console.log("Hola Pepe! yo te conozco");
+                break;
+            case "Lucia":
+                console.log("Hola Lucia! yo te conozco");
+                break;
+            default:
+                console.log("Eres nuevo... Bienvenido!");
+        }
+
+        //bucles
+
+        //While -Mientras
+        var vuelta =0;
+        console.log("## Bucle While ##");
+        while (vuelta < 10){
+            console.log(vuelta);
+            vuelta++
+        }
+
+        //For - Para
+        console.log("## Bucle For ##");
+        for(var vuelta = 0; vuelta < 10; vuelta++ ){
+            console.log(vuelta);
+        }
+
+          //Do... While - Repetir... Hasta que
+          var Dato = false;
+        console.log("## Bucle Do... while ##");
+        do {
+            console.log("Al menos una vez...");
+        } while (Dato)
+    </script>
+    
+</body>
+</html>
