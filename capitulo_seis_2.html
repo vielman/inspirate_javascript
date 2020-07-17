@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript inspirate</title>
+</head>
+<body>
+    <h1>Ejercicios Capitulo 6 segunda parte</h1>
+
+    <script>
+        //Numeros Math  
+
+        console.log("## Math round() ##");
+        console.log(Math.round(20.5));
+        console.log(Math.round(20.49));
+        console.log(Math.round(-20.51));
+
+        console.log("## Math Floor() ##");
+        console.log(Math.floor(20.5));
+        console.log(Math.floor(20.49));
+        console.log(Math.floor(-20.51));
+
+        console.log("## Math random() ##");
+        console.log(Math.random());
+        console.log(Math.random() * (11 -0) +0);
+        console.log(Math.floor(Math.random() * (11 -0)) +0);
+
+        //Date
+        console.log("## Date - Fecha Actual ##");
+        var ahora = new Date()
+        console.log(ahora);
+
+        console.log("## Metodo Getters ##");
+        var ahora = new Date()
+        console.log("Con UTC");
+        console.log("===== FECHA =====");
+        console.log("El año: "+ ahora.getUTCFullYear());
+        console.log("El mes: "+ ahora.getUTCMonth());
+        console.log("El dia de la semana: "+ ahora.getUTCDay());
+        console.log("El dia del mes: "+ ahora.getUTCDate());
+        console.log("===== HORA =====");
+        console.log("Horas: "+ ahora.getUTCHours());
+        console.log("Minutos: "+ ahora.getUTCMinutes());
+        console.log("Segundos: "+ ahora.getUTCSeconds());
+        console.log("milisegundos: "+ ahora.getUTCMilliseconds());
+
+        var ahora = new Date()
+        console.log("Con Local");
+        console.log("La fecha es "+ahora);
+        console.log("===== FECHA =====");
+        console.log("El año: "+ ahora.getFullYear());
+        console.log("El mes: "+ ahora.getMonth());
+        console.log("El dia de la semana: "+ ahora.getDay());
+        console.log("El dia del mes: "+ ahora.getDate());
+        console.log("===== HORA =====");
+        console.log("Horas: "+ ahora.getHours());
+        console.log("Minutos: "+ ahora.getMinutes());
+        console.log("Segundos: "+ ahora.getSeconds());
+        console.log("milisegundos: "+ ahora.getMilliseconds());
+        console.log("===== OTROS =====");
+        console.log("Diferencia horaria respecto a UTC: "+ ahora.getTimezoneOffset());
+       
+      
+     
+        
+    </script>
+    
+</body>
+</html>

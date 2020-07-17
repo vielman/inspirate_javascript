@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript inspirate</title>
+</head>
+<body>
+    <h1>Ejercicios Capitulo 5</h1>
+
+    <script>
+        //Bucles 
+        console.log("## Continue en bucles (salta el 5)##");
+        for (var i =0; i < 8; i++){
+            //salta el 5 y sigue...
+            if (i === 5){
+                continue;
+            }
+            console.log('El valor de i es '+i);
+        }
+
+        console.log("## Break en bucles (sale en 5)##");
+        for (var i =0; i < 10; i++){
+            //llega al 5 y sale.
+            if (i === 5){
+                break;
+            }
+            console.log('El valor de i es '+i);
+        }
+        
+        console.log("## Decrecimiento ##");
+        for (var i =5; i > 0; i--){
+          
+            console.log('El valor de i es '+i);
+        }
+
+        console.log("## Anidacion ##");
+        for (var i = 0; i < 2; i++){
+            console.log('Estoy en el primer bucle ');
+            for (var j = 2; j > 0; j--){
+                console.log('Estoy en el segundo bucle ');
+                console.log('Vuelta: ' + i + ' - '+j);
+            }
+        }
+        
+        
+       
+       
+       
+
+       
+    </script>
+    
+</body>
+</html>

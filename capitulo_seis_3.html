@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript inspirate</title>
+</head>
+<body>
+    <h1>Ejercicios Capitulo 6 tercera parte</h1>
+
+    <script>
+    
+        //Date
+        console.log("## Date - Fecha Actual ##");
+        var ahora = new Date()
+        console.log(ahora);
+
+        console.log("## Metodo Setters ##");
+        var newYear = new Date(Date.UTC(2020,1,1));
+        console.log("La fecha es "+ newYear);
+
+        console.log("## Dentro del marco ##");
+
+        newYear.setFullYear(1980);
+        console.log("La fecha es "+ newYear);
+
+        newYear.setUTCMilliseconds(1500);
+        console.log("La fecha es "+ newYear);
+
+        console.log("## Fuera del marco ##");
+
+        newYear.setDate(56);
+        console.log("La fecha es "+ newYear);
+
+        newYear.setUTCHours(36);
+        console.log("La fecha es "+ newYear);
+
+        newYear.setMonth(-6);
+        console.log("La fecha es "+ newYear);
+
+        console.log("## OTROS ##");
+        console.log("## toString , toDateString, toTimeString ##");
+
+        var ahora = new Date()
+        console.log(ahora.toString());
+        console.log(ahora.toDateString());
+        console.log(ahora.toTimeString());
+
+        console.log("## toUTCString , toISOString##");
+
+        var ahora = new Date()
+        console.log(ahora.toISOString());
+        console.log(ahora.toUTCString());
+
+        console.log("## toLocaleString ##");
+
+        var ahora = new Date()
+        console.log(ahora.toLocaleString());
+        console.log(ahora.toLocaleString("de-DE"), "Codigo IETF para Aleman");
+        
+        console.log("## Opcion Avanzada para fechas ##");
+
+        var opciones = {weekday:'long', year: 'numeric', month:'long', day: 'numeric'}; 
+        console.log(ahora.toLocaleString("de-DE", opciones));
+
+        console.log("## Benchmark ##");
+
+        var inicio = new Date();
+        var miArry = new Array(1000000);
+        for(var i = miArry.length -1; i >= 0; i-- ){
+            miArry[i] = new Object();
+        }
+        var fin = new Date();
+        var transcurso = fin.getTime() - inicio.getTime();
+        console.info("Pasaron "+ transcurso+"ms");
+
+        
+    </script>
+    
+</body>
+</html>
